@@ -1,8 +1,8 @@
 import { motion } from 'motion/react';
-import { Heart, Coffee, Sparkles, Target, Users, Zap } from 'lucide-react';
-// import { Card, CardContent } from './ui/card';
+import { Sparkles, Target, Users, Zap } from 'lucide-react';
+// import { Heart, Coffee } from 'lucide-react';
 
-const ImageWithFallback ='https://placehold.co/600x400';
+// const ImageWithFallback ='https://placehold.co/600x400';
 
 const stats = [
   { label: 'Years Experience', value: '6+', icon: Sparkles },

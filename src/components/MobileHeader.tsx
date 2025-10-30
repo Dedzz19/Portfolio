@@ -1,14 +1,15 @@
-import { Menu, Mail, Github } from 'lucide-react';
+// import { Menu, Mail, Github } from 'lucide-react';
 
 const exampleImage = 'figma:asset/99bae0620290c6e7f672ce4f709803e81441a47d.png';
-const navItems = ['Home', 'Resume', 'Components', 'About'];
+// const navItems = ['Home', 'Resume', 'Components', 'About'];
 
-interface MobileHeaderProps {
-  activeNav: string;
-  setActiveNav: (nav: string) => void;
-}
+// interface MobileHeaderProps {
+//   activeNav: string;
+//   setActiveNav: (nav: string) => void;
+// }
 
-export function MobileHeader({ activeNav, setActiveNav }: MobileHeaderProps) {
+// export function MobileHeader({ activeNav, setActiveNav }: MobileHeaderProps) {
+export function MobileHeader() {
 
   return (
     <header className="lg:hidden fixed top-0 left-0 right-0 z-50 bg-zinc-900/80 backdrop-blur-md border-b border-zinc-800">

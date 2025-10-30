@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
-import { Briefcase, GraduationCap, Award, Code2, Database, Layout, Server } from 'lucide-react';
+import { Briefcase, GraduationCap, Award, Code2, } from 'lucide-react';
+// import{Database, Layout, Server}
 // import { Card, CardContent } from './ui/card';
 
 const experiences = [
@@ -59,11 +60,11 @@ const skills = {
   'Tools & Others': ['Git', 'Docker', 'AWS', 'Firebase', 'Figma', 'CI/CD'],
 };
 
-const certifications = [
-  'AWS Certified Solutions Architect',
-  'Meta Frontend Developer Professional Certificate',
-  'MongoDB Certified Developer',
-];
+// const certifications = [
+//   'AWS Certified Solutions Architect',
+//   'Meta Frontend Developer Professional Certificate',
+//   'MongoDB Certified Developer',
+// ];
 
 export function Resume() {
   return (
@@ -95,6 +96,7 @@ export function Resume() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: index * 0.1 }}
             >
+                {exp.title}
               {/* <Card className="bg-zinc-900/50 border-zinc-800 hover:border-zinc-700 transition-colors">
                 <CardContent className="p-6">
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3">
@@ -139,6 +141,7 @@ export function Resume() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: index * 0.1 + 0.3 }}
             >
+                {edu.degree}
               {/* <Card className="bg-zinc-900/50 border-zinc-800 hover:border-zinc-700 transition-colors">
                 <CardContent className="p-6">
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-2">
@@ -166,7 +169,7 @@ export function Resume() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {Object.entries(skills).map(([category, skillList], index) => (
+          {Object.entries(skills).map(([category], index) => (
             <motion.div
               key={category}
               initial={{ opacity: 0, y: 20 }}
