@@ -1,0 +1,58 @@
+import type { ProjectType } from "./types";
+
+export const ProjectsData:ProjectType[] = [
+  {
+    id: 1,
+    title: 'Tiny Budget',
+    category: 'Frontend',
+    image: 'https://images.unsplash.com/photo-1748439281934-2803c6a3ee36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidWRnZXQlMjBmaW5hbmNlJTIwYXBwfGVufDF8fHx8MTc2MTgxMTI4MXww&ixlib=rb-4.1.0&q=80&w=1080',
+    tech: ['React', 'TypeScript', 'Tailwind'],
+    link: '#',
+    github: '#',
+  },
+  {
+    id: 2,
+    title: 'Cash Compass',
+    category: 'Frontend',
+    image: 'https://images.unsplash.com/photo-1681826291722-70bd7e9e6fc3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBiYW5raW5nJTIwYXBwfGVufDF8fHx8MTc2MTcxMDQ0MXww&ixlib=rb-4.1.0&q=80&w=1080',
+    tech: ['Next.js', 'React', 'CSS3'],
+    link: '#',
+    github: '#',
+  },
+  {
+    id: 3,
+    title: 'Store Clone',
+    category: 'Frontend',
+    image: 'https://images.unsplash.com/photo-1615739137453-bcadd839a913?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjBzdG9yZSUyMGRhcmt8ZW58MXx8fHwxNzYxODExMjgxfDA&ixlib=rb-4.1.0&q=80&w=1080',
+    tech: ['React', 'Redux', 'Stripe'],
+    link: '#',
+    github: '#',
+  },
+  {
+    id: 4,
+    title: 'Willey Furnitures',
+    category: 'Frontend',
+    image: 'https://images.unsplash.com/photo-1760611656148-063d3b9a8dbc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBmdXJuaXR1cmUlMjBzdG9yZXxlbnwxfHx8fDE3NjE4MTEyODB8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    tech: ['Vue.js', 'Vuex', 'SCSS'],
+    link: '#',
+    github: '#',
+  },
+  {
+    id: 5,
+    title: 'Real Estate Api',
+    category: 'Backend',
+    image: 'https://images.unsplash.com/photo-1706808849780-7a04fbac83ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob3VzZSUyMGV4dGVyaW9yfGVufDF8fHx8MTc2MTc2MjMyMHww&ixlib=rb-4.1.0&q=80&w=1080',
+    tech: ['Node.js', 'Express', 'MongoDB'],
+    link: '#',
+    github: '#',
+  },
+  {
+    id: 6,
+    title: 'Udux Clone',
+    category: 'Frontend',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBpbnRlcmlvciUyMGRlc2lnbnxlbnwxfHx8fDE3NjE3ODExNTV8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    tech: ['React', 'Firebase', 'Tailwind'],
+    link: '#',
+    github: '#',
+  },
+];
