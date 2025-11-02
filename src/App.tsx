@@ -28,8 +28,8 @@ export default function App() {
   return (
     <div className="min-h-screen bg-linear-to-br from-zinc-950 via-zinc-900 to-zinc-950">
       {/* Mobile Header */}
-      <MobileHeader />
-      {/* <MobileHeader activeNav={activeNav} setActiveNav={setActiveNav} /> */}
+
+      <MobileHeader activeNav={activeNav} setActiveNav={setActiveNav} />
 
       <div className="flex min-h-screen">
         {/* Desktop Sidebar */}

@@ -67,7 +67,7 @@ const certifications = [
     id:1,name:'Univelcity Frontend Certificate',image:FrontendCert
   },
   {
-    id:2,name:"Univelcity Backend Certificate",image:FrontendCert
+    id:2,name:"Univelcity Backend Certificate",image:BackendCert
   },
 ];
 
