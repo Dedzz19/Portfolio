@@ -1,6 +1,6 @@
 import { Mail, Github } from 'lucide-react';
+import Profile from "../assets/images/Profile.jpg"
 
-const exampleImage = 'https://placehold.co/600x400';
 
 export function ProfileSidebar() {
   return (
@@ -8,9 +8,9 @@ export function ProfileSidebar() {
       <div className="w-32 h-32 rounded-2xl overflow-hidden mb-6 bg-linear-to-br from-purple-500/20 to-pink-500/20 p-1">
         <div className="w-full h-full rounded-2xl overflow-hidden">
           <img 
-            src={exampleImage} 
+            src={Profile} 
             alt="Profile" 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-top"
           />
         </div>
       </div>
