@@ -4,7 +4,7 @@ const exampleImage = 'https://placehold.co/600x400';
 
 export function ProfileSidebar() {
   return (
-    <div className="bg-zinc-900/50 backdrop-blur-sm border-r border-zinc-800 p-8 flex flex-col items-center">
+    <div className="bg-zinc-900/50 backdrop-blur-sm border-r border-zinc-800 p-8 flex flex-col items-center min-h-full pt-24">
       <div className="w-32 h-32 rounded-2xl overflow-hidden mb-6 bg-linear-to-br from-purple-500/20 to-pink-500/20 p-1">
         <div className="w-full h-full rounded-2xl overflow-hidden">
           <img 

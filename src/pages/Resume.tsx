@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
-import { Briefcase, GraduationCap, Award, Code2, } from 'lucide-react';
-// import{Database, Layout, Server}
-// import { Card, CardContent } from './ui/card';
+import { Briefcase, GraduationCap, Award, Code2, Database, Layout, Server } from 'lucide-react';
+import { Card, CardContent } from "../components/Card";
+import { Badge } from '../components/libs/badge';
 
 const experiences = [
   {
@@ -41,30 +41,29 @@ const experiences = [
 
 const education = [
   {
-    degree: 'Bachelor of Science in Computer Science',
-    school: 'University of Technology',
-    period: '2015 - 2019',
-    description: 'Focused on software engineering, algorithms, and web development.',
+    degree: 'Bachelor of Science in Computer Engineering',
+    school: 'University of Lagos State',
+    period: '2024 - 2028',
+    description: 'Focused on web development and engineering technologies',
   },
   {
-    degree: 'Full Stack Web Development Bootcamp',
-    school: 'Code Academy',
-    period: '2019',
+    degree: 'Full Stack Web Development',
+    school: 'Univel Academy',
+    period: '2023',
     description: 'Intensive program covering modern web development technologies and best practices.',
   },
 ];
 
 const skills = {
-  'Frontend': ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Vue.js', 'Redux'],
-  'Backend': ['Node.js', 'Express', 'Python', 'MongoDB', 'PostgreSQL', 'REST APIs'],
-  'Tools & Others': ['Git', 'Docker', 'AWS', 'Firebase', 'Figma', 'CI/CD'],
+  'Frontend': ['React', 'TypeScript', 'Next.js', 'Tailwind CSS',],
+  'Backend': ['Node.js', 'Express', 'Python', 'MongoDB', 'Django', 'REST APIs'],
+  'Tools & Others': ['Git', 'Figma', 'CI/CD'],
 };
 
-// const certifications = [
-//   'AWS Certified Solutions Architect',
-//   'Meta Frontend Developer Professional Certificate',
-//   'MongoDB Certified Developer',
-// ];
+const certifications = [
+  'Univelcity Frontend Certificate',
+  'Univelcity Backend Certificate',
+];
 
 export function Resume() {
   return (
@@ -96,8 +95,7 @@ export function Resume() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: index * 0.1 }}
             >
-                {exp.title}
-              {/* <Card className="bg-zinc-900/50 border-zinc-800 hover:border-zinc-700 transition-colors">
+              <Card className="bg-zinc-900/50 border-zinc-800 hover:border-zinc-700 transition-colors">
                 <CardContent className="p-6">
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3">
                     <div>
@@ -118,7 +116,7 @@ export function Resume() {
                     ))}
                   </ul>
                 </CardContent>
-              </Card> */}
+              </Card>
             </motion.div>
           ))}
         </div>
@@ -141,8 +139,7 @@ export function Resume() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: index * 0.1 + 0.3 }}
             >
-                {edu.degree}
-              {/* <Card className="bg-zinc-900/50 border-zinc-800 hover:border-zinc-700 transition-colors">
+              <Card className="bg-zinc-900/50 border-zinc-800 hover:border-zinc-700 transition-colors">
                 <CardContent className="p-6">
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-2">
                     <h3 className="text-white">{edu.degree}</h3>
@@ -153,7 +150,7 @@ export function Resume() {
                   <p className="text-cyan-400 mb-2">{edu.school}</p>
                   <p className="text-sm text-zinc-400">{edu.description}</p>
                 </CardContent>
-              </Card> */}
+              </Card>
             </motion.div>
           ))}
         </div>
@@ -169,14 +166,14 @@ export function Resume() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {Object.entries(skills).map(([category], index) => (
+          {Object.entries(skills).map(([category, skillList], index) => (
             <motion.div
               key={category}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 + 0.5 }}
             >
-              {/* <Card className="bg-zinc-900/50 border-zinc-800 h-full">
+              <Card className="bg-zinc-900/50 border-zinc-800 h-full">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-2 mb-4">
                     {category === 'Frontend' && <Layout className="w-5 h-5 text-cyan-400" />}
@@ -196,7 +193,7 @@ export function Resume() {
                     ))}
                   </div>
                 </CardContent>
-              </Card> */}
+              </Card>
             </motion.div>
           ))}
         </div>
@@ -211,7 +208,7 @@ export function Resume() {
           <h2 className="text-white">Certifications</h2>
         </div>
 
-        {/* <Card className="bg-zinc-900/50 border-zinc-800">
+        <Card className="bg-zinc-900/50 border-zinc-800">
           <CardContent className="p-6">
             <ul className="space-y-3">
               {certifications.map((cert, index) => (
@@ -228,7 +225,7 @@ export function Resume() {
               ))}
             </ul>
           </CardContent>
-        </Card> */}
+        </Card>
       </section>
 
       {/* Download Resume Button */}
@@ -238,7 +235,7 @@ export function Resume() {
         transition={{ delay: 0.8 }}
         className="flex justify-center pt-4"
       >
-        <button className="px-8 py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 text-white hover:shadow-lg hover:shadow-cyan-500/20 transition-all">
+        <button className="px-8 py-3 rounded-lg bg-linear-to-r from-cyan-500 to-blue-500 text-white hover:shadow-lg hover:shadow-cyan-500/20 transition-all">
           Download Resume (PDF)
         </button>
       </motion.div>

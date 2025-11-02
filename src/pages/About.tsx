@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
-import { Sparkles, Target, Users, Zap } from 'lucide-react';
+import { Coffee, Heart, Sparkles, Target, Users, Zap } from 'lucide-react';
+import { Card, CardContent } from '../components/Card';
 // import { Heart, Coffee } from 'lucide-react';
 
 // const ImageWithFallback ='https://placehold.co/600x400';
@@ -73,16 +74,16 @@ export function About() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.2 }}
       >
-        {/* <Card className="bg-zinc-900/50 border-zinc-800 overflow-hidden">
+        <Card className="bg-zinc-900/50 border-zinc-800 overflow-hidden">
           <CardContent className="p-0">
             <div className="grid lg:grid-cols-2 gap-0">
-              <div className="relative h-64 lg:h-auto bg-gradient-to-br from-cyan-500/10 to-purple-500/10">
-                <ImageWithFallback
+              <div className="relative h-64 lg:h-auto bg-linear-to-br from-cyan-500/10 to-purple-500/10">
+                <img
                   src="https://images.unsplash.com/photo-1615285307672-09b361d7c61a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXZlbG9wZXIlMjB3b3Jrc3BhY2UlMjBzZXR1cHxlbnwxfHx8fDE3NjE2OTM3NjN8MA&ixlib=rb-4.1.0&q=80&w=1080"
                   alt="Workspace"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-zinc-900 to-transparent" />
               </div>
               <div className="p-8 lg:p-10">
                 <div className="flex items-center gap-2 mb-4">
@@ -120,7 +121,7 @@ export function About() {
               </div>
             </div>
           </CardContent>
-        </Card> */}
+        </Card>
       </motion.div>
 
       {/* Stats Section */}
@@ -137,15 +138,15 @@ export function About() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 + index * 0.1 }}
             >
-              {/* <Card className="bg-zinc-900/50 border-zinc-800 hover:border-zinc-700 transition-colors">
+              <Card className="bg-zinc-900/50 border-zinc-800 hover:border-zinc-700 transition-colors">
                 <CardContent className="p-6 text-center">
-                  <div className="w-12 h-12 mx-auto mb-3 rounded-lg bg-gradient-to-br from-cyan-500/10 to-purple-500/10 flex items-center justify-center">
+                  <div className="w-12 h-12 mx-auto mb-3 rounded-lg bg-linear-to-br from-cyan-500/10 to-purple-500/10 flex items-center justify-center">
                     <stat.icon className="w-6 h-6 text-cyan-400" />
                   </div>
                   <div className="text-2xl text-white mb-1">{stat.value}</div>
                   <div className="text-sm text-zinc-400">{stat.label}</div>
                 </CardContent>
-              </Card> */}
+              </Card>
             </motion.div>
           ))}
         </div>
@@ -162,7 +163,7 @@ export function About() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.5 + index * 0.1 }}
             >
-              {/* <Card className="bg-zinc-900/50 border-zinc-800 hover:border-zinc-700 transition-all hover:transform hover:scale-[1.02] h-full">
+              <Card className="bg-zinc-900/50 border-zinc-800 hover:border-zinc-700 transition-all hover:transform hover:scale-[1.02] h-full">
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
                     <span className="text-3xl">{interest.icon}</span>
@@ -172,7 +173,7 @@ export function About() {
                     </div>
                   </div>
                 </CardContent>
-              </Card> */}
+              </Card>
             </motion.div>
           ))}
         </div>
@@ -189,17 +190,17 @@ export function About() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7 + index * 0.1 }}
             >
-              {/* <Card className="bg-zinc-900/50 border-zinc-800 h-full">
+              <Card className="bg-zinc-900/50 border-zinc-800 h-full">
                 <CardContent className="p-6">
                   <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-cyan-400 mt-2 flex-shrink-0" />
+                    <div className="w-2 h-2 rounded-full bg-cyan-400 mt-2 shrink-0" />
                     <div>
                       <h3 className="text-white mb-2">{value.title}</h3>
                       <p className="text-sm text-zinc-400">{value.description}</p>
                     </div>
                   </div>
                 </CardContent>
-              </Card> */}
+              </Card>
             </motion.div>
           ))}
         </div>
@@ -211,18 +212,18 @@ export function About() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
       >
-        {/* <Card className="bg-gradient-to-br from-cyan-500/10 to-purple-500/10 border-zinc-800">
+        <Card className="bg-linear-to-br from-cyan-500/10 to-purple-500/10 border-zinc-800">
           <CardContent className="p-8 text-center">
             <h2 className="text-white mb-3">Let's Work Together</h2>
             <p className="text-zinc-400 mb-6 max-w-2xl mx-auto">
               I'm always interested in hearing about new projects and opportunities. 
               Whether you have a question or just want to say hi, feel free to reach out!
             </p>
-            <button className="px-8 py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 text-white hover:shadow-lg hover:shadow-cyan-500/20 transition-all">
+            <button className="px-8 py-3 rounded-lg bg-linear-to-r from-cyan-500 to-blue-500 text-white hover:shadow-lg hover:shadow-cyan-500/20 transition-all">
               Get In Touch
             </button>
           </CardContent>
-        </Card> */}
+        </Card>
       </motion.div>
     </motion.div>
   );
