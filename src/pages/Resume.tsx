@@ -2,6 +2,8 @@ import { motion } from 'motion/react';
 import { Briefcase, GraduationCap, Award, Code2, Database, Layout, Server } from 'lucide-react';
 import { Card, CardContent } from "../components/Card";
 import { Badge } from '../components/libs/badge';
+import FrontendCert from "../assets/images/Frontend Certificate.jpeg"
+import BackendCert from "../assets/images/Backend Certificate.jpeg"
 
 const experiences = [
   {
@@ -61,8 +63,12 @@ const skills = {
 };
 
 const certifications = [
-  'Univelcity Frontend Certificate',
-  'Univelcity Backend Certificate',
+  {
+    id:1,name:'Univelcity Frontend Certificate',image:FrontendCert
+  },
+  {
+    id:2,name:"Univelcity Backend Certificate",image:FrontendCert
+  },
 ];
 
 export function Resume() {
@@ -212,6 +218,7 @@ export function Resume() {
           <CardContent className="p-6">
             <ul className="space-y-3">
               {certifications.map((cert, index) => (
+                <div className='group'>
                 <motion.li
                   key={index}
                   initial={{ opacity: 0, x: -20 }}
@@ -220,8 +227,12 @@ export function Resume() {
                   className="flex items-center gap-3 text-zinc-300"
                 >
                   <div className="w-2 h-2 rounded-full bg-green-500" />
-                  {cert}
+                  {cert.name}
                 </motion.li>
+                <div className='aspect-video overflow-hidden max-w-[500px] my-4'>
+                  <img className='w-full origin-center h-full object-cover group-hover:scale-105 transition-transform duration-500 object-top' src={cert.image} alt={cert.name} />
+                </div>
+                </div>
               ))}
             </ul>
           </CardContent>

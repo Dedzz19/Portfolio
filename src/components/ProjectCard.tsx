@@ -23,7 +23,7 @@ export function ProjectCard({ title, category, image, tech, link, github }: Proj
         <img 
           src={image} 
           alt={title}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          className="w-full origin-center h-full object-cover group-hover:scale-105 transition-transform duration-500 object-top"
         />
       </div>
       
@@ -55,13 +55,17 @@ export function ProjectCard({ title, category, image, tech, link, github }: Proj
         
         <div className="flex gap-2">
           {link && (
-            <button className="flex items-center gap-2 px-4 py-2 rounded-lg bg-cyan-500/10 hover:bg-cyan-500/20 text-cyan-400 text-sm transition-colors flex-1">
+            <button 
+         onClick={() => (link !== "#" ? window.open(link) : console.log("no link"))}
+            className="flex cursor-pointer items-center gap-2 px-4 py-2 rounded-lg bg-cyan-500/10 hover:bg-cyan-500/20 text-cyan-400 text-sm transition-colors flex-1">
               <ExternalLink className="w-4 h-4" />
               View Live
             </button>
           )}
           {github && (
-            <button className="flex items-center gap-2 px-4 py-2 rounded-lg bg-zinc-800/50 hover:bg-zinc-800 text-zinc-400 text-sm transition-colors flex-1">
+            <button
+             onClick={()=>{window.open(github)}}
+            className="flex cursor-pointer items-center gap-2 px-4 py-2 rounded-lg bg-zinc-800/50 hover:bg-zinc-800 text-zinc-400 text-sm transition-colors flex-1">
               <Github className="w-4 h-4" />
               Code
             </button>
