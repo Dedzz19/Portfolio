@@ -71,7 +71,7 @@ export function MobileHeader({ activeNav, setActiveNav }: MobileHeaderProps) {
               animate={{ x:"0%",opacity: 1 }}
               exit={{x:"100%", opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="fixed inset-0 right-80 bg-zinc-900/40 backdrop-blur-sm z-30 h-screen"
+              className="fixed inset-0 right-80 bg-zinc-900/40 backdrop-blur-sm z-30 h-dvh"
             />
 
           <motion.div
@@ -135,7 +135,7 @@ export function MobileHeader({ activeNav, setActiveNav }: MobileHeaderProps) {
               </a>
 
               <a
-                href="https://github.com/Debs19"
+                href="https://github.com/Dedzz19"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 p-3 rounded-lg bg-zinc-800/50 hover:bg-zinc-800 transition-colors"
@@ -145,7 +145,7 @@ export function MobileHeader({ activeNav, setActiveNav }: MobileHeaderProps) {
                 </div>
                 <div>
                   <p className="text-xs text-zinc-400">Github</p>
-                  <p className="text-sm text-white">Debs19</p>
+                  <p className="text-sm text-white">Dedzz19</p>
                 </div>
               </a>
             </div>
