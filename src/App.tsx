@@ -5,7 +5,7 @@ import { Portfolio } from './pages/Profile';
 import { Resume } from './pages/Resume';
 import { About } from './pages/About';
 
-const navItems = ['Home', 'Resume', 'Components', 'About'];
+const navItems = ['Home', 'Resume', 'About'];
 
 export default function App() {
   const [activeNav, setActiveNav] = useState('Home');
@@ -18,8 +18,8 @@ export default function App() {
         return <Resume />;
       case 'About':
         return <About />;
-      case 'Components':
-        return <Portfolio />;
+      // case 'Components':
+      //   return <Portfolio />;
       default:
         return <Portfolio />;
     }
@@ -45,7 +45,7 @@ export default function App() {
               <button
                 key={item}
                 onClick={() => setActiveNav(item)}
-                className={`px-4 py-2 rounded-lg transition-colors ${
+                className={`px-4 py-2 rounded-lg transition-colors cursor-pointer ${
                   activeNav === item
                     ? 'bg-cyan-500/10 text-cyan-400'
                     : 'text-zinc-400 hover:text-white'
@@ -68,15 +68,15 @@ export default function App() {
                 © 2025 Omoera Sean. All rights reserved.
               </p>
               <div className="flex gap-4">
-                <a href="#" className="text-sm text-zinc-400 hover:text-cyan-400 transition-colors">
+                <a href="https://www.linkedin.com/in/oserehme-omoera-9453b4259/?lipi=urn%3Ali%3Apage%3Aprofile_common_profile_index%3B929e8f8b-39eb-49ba-a59f-600a5e7af374" className="text-sm text-zinc-400 hover:text-cyan-400 transition-colors">
                   LinkedIn
                 </a>
-                <a href="#" className="text-sm text-zinc-400 hover:text-cyan-400 transition-colors">
+                {/* <a href="#" className="text-sm text-zinc-400 hover:text-cyan-400 transition-colors">
                   Twitter
                 </a>
                 <a href="#" className="text-sm text-zinc-400 hover:text-cyan-400 transition-colors">
                   Dribbble
-                </a>
+                </a> */}
               </div>
             </div>
           </footer>

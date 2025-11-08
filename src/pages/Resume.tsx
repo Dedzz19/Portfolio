@@ -1,45 +1,45 @@
 import { motion } from 'motion/react';
-import { Briefcase, GraduationCap, Award, Code2, Database, Layout, Server } from 'lucide-react';
+import {  GraduationCap, Award, Code2, Database, Layout, Server } from 'lucide-react';
 import { Card, CardContent } from "../components/Card";
 import { Badge } from '../components/libs/badge';
 import FrontendCert from "../assets/images/Frontend Certificate.jpeg"
 import BackendCert from "../assets/images/Backend Certificate.jpeg"
 
-const experiences = [
-  {
-    title: 'Senior Full Stack Developer',
-    company: 'Tech Solutions Inc.',
-    period: '2023 - Present',
-    description: 'Leading development of enterprise web applications using React, Node.js, and cloud infrastructure. Mentoring junior developers and architecting scalable solutions.',
-    achievements: [
-      'Reduced application load time by 60% through optimization',
-      'Led migration to microservices architecture',
-      'Implemented CI/CD pipeline reducing deployment time by 80%',
-    ],
-  },
-  {
-    title: 'Full Stack Developer',
-    company: 'Digital Innovations',
-    period: '2021 - 2023',
-    description: 'Developed and maintained multiple client-facing applications. Collaborated with design teams to create seamless user experiences.',
-    achievements: [
-      'Built 15+ responsive web applications',
-      'Integrated third-party APIs and payment systems',
-      'Improved code quality through testing and code reviews',
-    ],
-  },
-  {
-    title: 'Frontend Developer',
-    company: 'StartUp Studio',
-    period: '2019 - 2021',
-    description: 'Created responsive and interactive user interfaces. Worked closely with UX designers to implement pixel-perfect designs.',
-    achievements: [
-      'Developed reusable component library',
-      'Increased user engagement by 45%',
-      'Optimized SEO resulting in 3x organic traffic',
-    ],
-  },
-];
+// const experiences = [
+//   {
+//     title: 'Senior Full Stack Developer',
+//     company: 'Tech Solutions Inc.',
+//     period: '2023 - Present',
+//     description: 'Leading development of enterprise web applications using React, Node.js, and cloud infrastructure. Mentoring junior developers and architecting scalable solutions.',
+//     achievements: [
+//       'Reduced application load time by 60% through optimization',
+//       'Led migration to microservices architecture',
+//       'Implemented CI/CD pipeline reducing deployment time by 80%',
+//     ],
+//   },
+//   {
+//     title: 'Full Stack Developer',
+//     company: 'Digital Innovations',
+//     period: '2021 - 2023',
+//     description: 'Developed and maintained multiple client-facing applications. Collaborated with design teams to create seamless user experiences.',
+//     achievements: [
+//       'Built 15+ responsive web applications',
+//       'Integrated third-party APIs and payment systems',
+//       'Improved code quality through testing and code reviews',
+//     ],
+//   },
+//   {
+//     title: 'Frontend Developer',
+//     company: 'StartUp Studio',
+//     period: '2019 - 2021',
+//     description: 'Created responsive and interactive user interfaces. Worked closely with UX designers to implement pixel-perfect designs.',
+//     achievements: [
+//       'Developed reusable component library',
+//       'Increased user engagement by 45%',
+//       'Optimized SEO resulting in 3x organic traffic',
+//     ],
+//   },
+// ];
 
 const education = [
   {
@@ -85,7 +85,7 @@ export function Resume() {
       </div>
 
       {/* Experience Section */}
-      <section>
+      {/* <section>
         <div className="flex items-center gap-3 mb-6">
           <div className="w-10 h-10 rounded-lg bg-linear-to-br from-cyan-500 to-blue-500 flex items-center justify-center">
             <Briefcase className="w-5 h-5 text-white" />
@@ -126,7 +126,7 @@ export function Resume() {
             </motion.div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Education Section */}
       <section>

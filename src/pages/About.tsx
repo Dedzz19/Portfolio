@@ -1,15 +1,15 @@
 import { motion } from 'motion/react';
-import { Coffee, Heart, Sparkles, Target, Users, Zap } from 'lucide-react';
+import { Heart, Sparkles, Target, Users, Zap } from 'lucide-react';
 import { Card, CardContent } from '../components/Card';
-// import { Heart, Coffee } from 'lucide-react';
+import Profile from "../assets/images/Profile.jpg"
 
 // const ImageWithFallback ='https://placehold.co/600x400';
 
 const stats = [
-  { label: 'Years Experience', value: '6+', icon: Sparkles },
-  { label: 'Projects Completed', value: '50+', icon: Target },
-  { label: 'Happy Clients', value: '30+', icon: Users },
-  { label: 'Code Commits', value: '5000+', icon: Zap },
+  { label: 'Years Experience', value: '2+', icon: Sparkles },
+  { label: 'Projects Completed', value: '10+', icon: Target },
+  { label: 'Happy Clients', value: '10+', icon: Users },
+  { label: 'Code Commits', value: '200+', icon: Zap },
 ];
 
 const interests = [
@@ -19,7 +19,7 @@ const interests = [
     icon: '🚀',
   },
   {
-    title: 'UI/UX Design',
+    title: 'Frontend Design',
     description: 'Creating beautiful, intuitive interfaces that users love to interact with.',
     icon: '🎨',
   },
@@ -76,10 +76,10 @@ export function About() {
       >
         <Card className="bg-zinc-900/50 border-zinc-800 overflow-hidden">
           <CardContent className="p-0">
-            <div className="grid lg:grid-cols-2 gap-0">
+            <div className="grid lg:grid-cols-2 gap-0 items-center">
               <div className="relative h-64 lg:h-auto bg-linear-to-br from-cyan-500/10 to-purple-500/10">
                 <img
-                  src="https://images.unsplash.com/photo-1615285307672-09b361d7c61a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXZlbG9wZXIlMjB3b3Jrc3BhY2UlMjBzZXR1cHxlbnwxfHx8fDE3NjE2OTM3NjN8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                  src={Profile}
                   alt="Workspace"
                   className="w-full h-full object-cover"
                 />
@@ -92,7 +92,7 @@ export function About() {
                 </div>
                 <div className="space-y-4 text-zinc-300">
                   <p>
-                    I'm a passionate Full Stack Developer with over 6 years of experience crafting 
+                    I'm a passionate Full Stack Developer with over 2 years of experience crafting 
                     digital experiences that make a difference. I specialize in building modern web 
                     applications that are not only functional but also beautiful and intuitive.
                   </p>
@@ -103,16 +103,10 @@ export function About() {
                     solutions that truly serve users' needs.
                   </p>
                   <p>
-                    When I'm not coding, you'll find me exploring new technologies, contributing to 
-                    open source, or sharing knowledge with the developer community. I'm always excited 
-                    to take on new challenges and collaborate on interesting projects.
+                    When I’m not coding, you’ll usually find me playing games, discovering new music, or experimenting with new ideas and side projects. I love exploring how creativity and technology intersect, and I’m always up for learning something new or tackling an exciting challenge.
                   </p>
                 </div>
                 <div className="flex items-center gap-4 mt-6 pt-6 border-t border-zinc-800">
-                  <div className="flex items-center gap-2 text-zinc-400">
-                    <Coffee className="w-5 h-5 text-cyan-400" />
-                    <span className="text-sm">Coffee Enthusiast</span>
-                  </div>
                   <div className="flex items-center gap-2 text-zinc-400">
                     <Heart className="w-5 h-5 text-pink-400" />
                     <span className="text-sm">Code Lover</span>
@@ -219,9 +213,9 @@ export function About() {
               I'm always interested in hearing about new projects and opportunities. 
               Whether you have a question or just want to say hi, feel free to reach out!
             </p>
-            <button className="px-8 py-3 rounded-lg bg-linear-to-r from-cyan-500 to-blue-500 text-white hover:shadow-lg hover:shadow-cyan-500/20 transition-all">
+            {/* <button className="px-8 py-3 rounded-lg bg-linear-to-r from-cyan-500 to-blue-500 text-white hover:shadow-lg hover:shadow-cyan-500/20 transition-all">
               Get In Touch
-            </button>
+            </button> */}
           </CardContent>
         </Card>
       </motion.div>

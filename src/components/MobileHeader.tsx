@@ -3,7 +3,7 @@ import { Github, Mail, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Profile from "../assets/images/Profile.jpg";
 
-const navItems = ["Home", "Resume", "Components", "About"];
+const navItems = ["Home", "Resume", "About"];
 
 interface MobileHeaderProps {
   activeNav: string;
