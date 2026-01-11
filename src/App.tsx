@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ProfileSidebar } from './components/ProfileSidebar';
 import { MobileHeader } from './components/MobileHeader';
 import { Portfolio } from './pages/Profile';
@@ -24,6 +24,10 @@ export default function App() {
         return <Portfolio />;
     }
   };
+
+  useEffect(()=>{
+      window.scrollTo(0, 0);
+  },[activeNav])
 
   return (
     <div className="min-h-screen bg-linear-to-br from-zinc-950 via-zinc-900 to-zinc-950">
