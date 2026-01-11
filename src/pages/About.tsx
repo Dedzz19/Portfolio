@@ -3,8 +3,6 @@ import { Heart, Sparkles, Target, Users, Zap } from 'lucide-react';
 import { Card, CardContent } from '../components/Card';
 import Profile from "../assets/images/Profile.jpg"
 
-// const ImageWithFallback ='https://placehold.co/600x400';
-
 const stats = [
   { label: 'Years Experience', value: '2+', icon: Sparkles },
   { label: 'Projects Completed', value: '10+', icon: Target },
@@ -81,7 +79,7 @@ export function About() {
                 <img
                   src={Profile}
                   alt="Workspace"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-zinc-900 to-transparent" />
               </div>
